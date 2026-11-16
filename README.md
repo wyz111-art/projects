@@ -108,24 +108,17 @@
 
 ```text
 .
-├── data/
-│   ├── raw/                 # 原始下载数据（不入库大文件，用说明文档记录来源）
-│   ├── cleaned/             # 清洗后日/月/年 CSV、清洗后 GPKG、土地比例表
-│   └── integrated/          # 跨源关联后的建模宽表
-├── src/
-│   ├── 01_air_quality/      # 空气质量数据清洗与多粒度聚合
-│   ├── 02_city_stats/       # 年鉴/统计局 HTML、JSON、XLSX 解析与长表转宽表
-│   ├── 03_roads/            # OSM 道路筛选、省界裁剪、缓冲区与距离计算
-│   ├── 04_landcover/        # CLCD 栅格掩膜与城市分区统计
-│   ├── 05_era5/             # ERA5 读取、单位换算、空间归属与日/月/年聚合
-│   ├── q1_industry_eco/     # 问题一：OLS、K-Means、一阶差分、可视化
-│   ├── q2_roads_sites/      # 问题二：Spearman/FDR、固定效应回归、聚类、异常检测、Apriori
-│   └── q3_haze_days/        # 问题三：随机森林三模型对比与特征重要性
-├── reports/
-│   └── 江苏省空气质量多源融合分析.docx   # 完整项目报告
-├── figures/                 # 输出图表
-├── requirements.txt
-└── README.md
+├── analysis/                # 核心问题分析代码
+├── clean/                   # 数据清洗代码
+├── 数据/                    # 项目数据集
+├── .gitignore               # Git 忽略规则配置
+├── AI_USAGE.md              # AI 使用记录、心得与反思
+├── README.md                # 项目说明文档
+├── 多源数据关联图.png        # 多源数据关联示意图
+├── 数据源清单与采集日志.docx # 数据源来源、采集时间、许可说明与采集日志
+├── 项目报告.docx            # 完整项目报告
+└── 项目展示.pptx            # 项目展示PPT
+
 ```
 
 ## 环境依赖
