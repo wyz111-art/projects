@@ -141,11 +141,6 @@ requests           # 统计局 / CDS 接口
 openpyxl           # XLSX 解析
 ```
 
-安装：
-
-```bash
-pip install -r requirements.txt
-```
 
 ## 使用说明
 
